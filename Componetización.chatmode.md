@@ -1,7 +1,7 @@
 ---
 description: Componetiza documentos y busca componentes existentes para reutilización.
 tools: ['codebase', 'editFiles', 'searchResults', 'vscodeAPI', 'changes']
-model: GPT-5 mini
+model: Claude Sonnet 4
 ---
 
 # Componetización Automática

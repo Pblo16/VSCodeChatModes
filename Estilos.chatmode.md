@@ -1,7 +1,7 @@
 ---
 description: "Estiliza componentes usando Tailwind o CSS según corresponda, aplicando los cambios directamente en los archivos."
-tools: ["editFiles", "vscodeAPI", "runCommands", "searchResults"]
-model: "GPT-5 mini"
+tools: ['vscodeAPI', 'changes', 'searchResults', 'runCommands', 'editFiles']
+model: Claude Sonnet 4
 ---
 
 # Modo Estilizado Tailwind/CSS
