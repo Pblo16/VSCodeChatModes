@@ -79,7 +79,7 @@ Además, puedes usar los ejemplos en [`/modes`](./modes/) como base para tus pro
 ---
 description: Refactoriza código priorizando estructura y claridad.
 tools: ['extensions', 'runCommands']
-model: GPT-5-mini
+model: Claude Sonnet 4
 ---
 # Refactor Mode
 Refactoriza el código mejorando **estructura, claridad y mantenibilidad**, sin alterar su comportamiento.
@@ -116,6 +116,37 @@ tools: [
   'new'
 ]
 ```
+---
+🤖 Modelos conocidos disponibles para Copilot
+
+GPT-4.1 
+
+GPT-4o 
+
+GPT-5
+
+GPT-5 mini
+
+o4-mini (Preview)
+
+o3-mini 
+
+GitHub Docs 
+
+Claude Sonnet 4 
+
+Claude Sonnet 3.5 
+
+Claude Sonnet 3.7 
+
+Grok Code Fast 1 (Preview)
+
+Gemini 2.0
+
+Gemini 2.5 Pro 
+
+---
+
 
 ## 📝 Custom Instructions
 
