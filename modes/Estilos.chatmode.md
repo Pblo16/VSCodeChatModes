@@ -1,6 +1,6 @@
 ---
 description: "Estiliza componentes usando Tailwind o CSS según corresponda, aplicando los cambios directamente en los archivos."
-tools: ['vscodeAPI', 'changes', 'searchResults', 'runCommands', 'editFiles']
+tools: ['extensions', 'codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'runCommands', 'runTasks', 'editFiles', 'runNotebooks', 'search', 'new']
 model: Claude Sonnet 4
 ---
 

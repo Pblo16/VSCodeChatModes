@@ -1,0 +1,56 @@
+{
+  "reference_md": "# VS Code – Chat Modes\n\n## Concepto\n\nLos **chat modes** son configuraciones predefinidas que adaptan el comportamiento del chat de VS Code para distintos flujos de trabajo o personalidades.\n\nVS Code incluye **tres modos integrados**:\n\n* **Ask**\n* **Edit**\n* **Agent**\n\nAdemás, se pueden crear **modos personalizados** para tareas especializadas, como planificación, revisión de código o investigación.\n\n## Cambio de Modo\n\n1. Abre la **vista de Chat** (`Ctrl+Alt+I`).\n2. Selecciona el modo en el **dropdown de chat mode**.\n\n## Modos Integrados\n\n### Ask Mode\n\n**Objetivo:** responder preguntas sobre el código, diseño de software o conceptos técnicos.\n**Uso típico:**\n* Entender cómo funciona una pieza de código\n* Brainstorming de diseño de software\n* Explorar nuevas tecnologías\n\n### Edit Mode\n\n**Objetivo:** realizar cambios de código en múltiples archivos.\n**Características:**\n* VS Code aplica los cambios directo en el editor\n* Revisión en el lugar\n**Uso típico:** cuando se sabe qué cambios se deben hacer y en qué archivos.\n\n### Agent Mode\n\n**Objetivo:** realizar cambios de forma más autónoma en múltiples archivos.\n**Características:**\n* Puede ejecutar comandos en terminal y usar herramientas\n**Uso típico:** tareas menos definidas que requieren pasos automáticos o complejos.\n\n## Modos Personalizados\n\n**Disponibilidad:** desde VS Code `1.101` (en preview).\n\nUn modo personalizado es un archivo `.chatmode.md` que contiene:\n* **YAML Frontmatter (opcional):**\n  * `description`: texto breve, se muestra como placeholder en el chat.\n  * `tools`: lista de herramientas o sets de herramientas habilitados.\n  * `model`: modelo de IA a usar (si no se define, usa el seleccionado en el model picker).\n* **Body:** instrucciones en Markdown que definen el comportamiento del chat.\n  * Puede incluir instrucciones detalladas, prompts o links a otros archivos de instrucciones.\n\n## Ejemplo de Archivo `.chatmode.md`\n\n```markdown\n---\ndescription: Generate an implementation plan for new features or refactoring existing code.\ntools: tools: ['extensions', 'runCommands', 'runTasks']\nmodel: Claude Sonnet 4\n---\n# Planning mode instructions\nYou are in planning mode. Your task is to generate an implementation plan for a new feature or for refactoring existing code.\nDon't make any code edits, just generate a plan.\n\nThe plan consists of a Markdown document that describes the implementation plan, including the following sections:\n* Overview: A brief description of the feature or refactoring task.\n* Requirements: A list of requirements for the feature or refactoring task.\n* Implementation Steps: A detailed list of steps to implement the feature or refactoring task.\n* Testing: A list of tests that need to be implemented to verify the feature or refactoring task.\n```\n\n## Creación de un Chat Mode Personalizado\n\n1. En la vista de Chat:\n   * Selecciona **Configure Chat > Modes**\n   * Selecciona **Create new custom chat mode file**\n   * O usa el comando **Chat: New Mode File** en la Command Palette (`Ctrl+Shift+P`).\n2. Elige la **ubicación** del archivo:\n   * **Workspace:** por defecto en `.github/chatmodes/`\n     * Se pueden añadir carpetas adicionales con `chat.modeFilesLocations`.\n   * **User profile:** se guarda en el perfil actual y se puede sincronizar entre dispositivos con **Settings Sync**.\n3. Asigna un **nombre** al modo (se mostrará en el dropdown de chat mode).\n4. Edita el archivo `.chatmode.md`:\n   * Agrega `description`, `tools`, y `model` en el **Frontmatter**.\n   * Escribe las instrucciones en el cuerpo del archivo.\n\n## Gestión de Chat Modes Existentes\n* En la vista de Chat: **Configure Chat > Modes**\n* Selecciona el modo existente para editarlo.\n* O usa el comando **Chat: Configure Chat Modes** en la Command Palette (`Ctrl+Shift+P`).",
+  "modes": {
+    "built_in_modes": [
+      {
+        "name": "Ask",
+        "description": "Responder preguntas sobre código, diseño de software o conceptos técnicos.",
+        "usage": "Entender cómo funciona una pieza de código, brainstorming de diseño, explorar nuevas tecnologías",
+        "tools": [],
+        "model": null,
+        "type": "example"
+      },
+      {
+        "name": "Edit",
+        "description": "Realizar cambios de código en múltiples archivos.",
+        "usage": "Cuando sabes qué cambios se deben hacer y en qué archivos.",
+        "tools": [],
+        "model": null,
+        "type": "example"
+      },
+      {
+        "name": "Agent",
+        "description": "Realizar cambios autónomos en múltiples archivos, incluyendo ejecución de terminal y herramientas.",
+        "usage": "Tareas menos definidas que requieren pasos automáticos o complejos.",
+        "tools": [],
+        "model": null,
+        "type": "example"
+      }
+    ],
+    "custom_modes": [
+      {
+        "name": "Planning Mode",
+        "description": "Generar un plan de implementación para nuevas funcionalidades o refactorizaciones.",
+        "tools": [
+          "extensions",
+          "runCommands",
+          "runTasks"
+        ]
+        "model": "Claude Sonnet 4",
+        "instructions": "No hacer cambios de código, solo generar un plan. El plan debe incluir: Overview, Requirements, Implementation Steps y Testing.",
+        "type": "example"
+      }
+    ],
+    "template_for_creation": {
+      "description": "Instrucciones para crear nuevos modos de chat en VS Code.",
+      "instructions": [
+        "Abrir Chat view en VS Code (Ctrl+Alt+I)",
+        "Seleccionar Configure Chat > Modes",
+        "Crear nuevo archivo .chatmode.md o JSON",
+        "Definir nombre, descripción, herramientas, modelo e instrucciones",
+        "Guardar en workspace o user profile"
+      ],
+      "type": "template"
+    }
+  }
+}
