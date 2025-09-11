@@ -85,6 +85,38 @@ model: GPT-5-mini
 Refactoriza el código mejorando **estructura, claridad y mantenibilidad**, sin alterar su comportamiento.
 ```
 
+## 🛠 Herramientas Disponibles en Chat Modes
+
+Al crear un archivo `.chatmode.md` puedes habilitar diferentes **herramientas** en el `frontmatter` usando la clave `tools`.  
+Estas herramientas permiten que el chat interactúe directamente con tu proyecto, tu entorno de desarrollo y la terminal.
+
+Lista completa de herramientas soportadas:
+
+```yaml
+tools: [
+  'extensions',
+  'codebase',
+  'usages',
+  'vscodeAPI',
+  'problems',
+  'changes',
+  'testFailure',
+  'terminalSelection',
+  'terminalLastCommand',
+  'openSimpleBrowser',
+  'fetch',
+  'findTestFiles',
+  'searchResults',
+  'githubRepo',
+  'runCommands',
+  'runTasks',
+  'editFiles',
+  'runNotebooks',
+  'search',
+  'new'
+]
+```
+
 ## 📝 Custom Instructions
 
 Las **instrucciones personalizadas** permiten definir guías globales o específicas.
