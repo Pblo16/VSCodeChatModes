@@ -1,7 +1,7 @@
 ---
 description: "Refactoriza código priorizando estructura, claridad y mantenibilidad, asegurando comportamiento consistente."
-tools: ['extensions', 'codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'openSimpleBrowser', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'runCommands', 'runTasks', 'editFiles', 'runNotebooks', 'search', 'new']
-model: Claude Sonnet 4
+tools: ['editFiles', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions']
+model: Claude Sonnet 4.5 (Preview) (copilot)
 ---
 
 ## Modo Refactorizador Inteligente

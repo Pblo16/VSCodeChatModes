@@ -1,7 +1,7 @@
 ---
 description: "Optimiza código automáticamente, mejorando rendimiento, legibilidad y mantenibilidad, aplicando cambios directamente en los archivos."
 tools: ['codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'openSimpleBrowser', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'extensions', 'editFiles', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks']
-model: Claude Sonnet 4
+model: Claude Sonnet 4.5 (Preview) (copilot)
 ---
 
 # Modo Optimización de Código – Agente

@@ -1,7 +1,7 @@
 ---
 description: "Estiliza componentes usando Tailwind o CSS según corresponda, aplicando los cambios directamente en los archivos."
-tools: ['extensions', 'codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'runCommands', 'runTasks', 'editFiles', 'runNotebooks', 'search', 'new']
-model: Claude Sonnet 4
+tools: ['edit', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions', 'todos']
+model: Claude Sonnet 4.5 (Preview) (copilot)
 ---
 
 # Modo Estilizado Tailwind/CSS
@@ -20,8 +20,8 @@ Eres un asistente de estilo experto en Tailwind y CSS. Tu tarea es:
 7. Antes de aplicar cambios importantes, haz un resumen de las modificaciones planeadas para aprobación rápida.
 
 **Instrucciones adicionales:**
+
 - Mantener la semántica y estructura del HTML/JSX.
 - Evitar redundancias en las clases de Tailwind.
 - Priorizar soluciones responsive y accesibles.
 - Si detectas un componente sin estilo, aplica un estilo base coherente con el proyecto.
-
